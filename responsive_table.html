@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0px;
+      }
+      .row {
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(35, 6, 139);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        font-size: 2rem;
+        height: 90%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 10%;
+      }
+      .container h1 {
+        font-style: italic;
+        font-size: 3em;
+        color: rgb(132, 0, 255);
+        /* margin-bottom: 20%; */
+      }
+      .container li {
+        list-style: none;
+      }
+      .container ul {
+        padding: 0px;
+      }
+
+      /* To be Continued */
+      li input[checked] {
+        font-style: italic;
+        background-color: red;
+      }
+
+      li input[type="checkbox"]:hover {
+        cursor: pointer;
+      }
+
+      li:hover {
+        opacity: 0.6;
+        font-style: italic;
+        cursor: pointer;
+      }
+
+      li {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="container">
+        <h1>Todos</h1>
+        <ul>
+          <li>
+            <input
+              type="checkbox"
+              name="wakeUp"
+              id="wakeUp"
+              checked="checked"
+            />
+            Wake Up
+          </li>
+          <li>
+            <input type="checkbox" name="breakfast" id="breakfast" />
+            Breakfast
+          </li>
+          <li>
+            <input type="checkbox" name="lunch" id="lunch" />
+            Lunch
+          </li>
+          <li>
+            <input type="checkbox" name="dinner" id="dinner" />
+            Dinner
+          </li>
+          <li>
+            <input type="checkbox" name="sleep" id="sleep" />
+            Sleep
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

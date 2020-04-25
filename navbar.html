@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0px;
+      }
+      header {
+        background-color: rgb(231, 255, 192);
+      }
+      .navbar {
+        padding: 3px 10px;
+        width: 80%;
+        margin: 0px auto;
+      }
+      .navbar ul {
+        overflow: auto;
+      }
+      .navbar li {
+        float: left;
+        list-style: none;
+
+        font-weight: bold;
+        font-size: x-large;
+      }
+      .navbar li a {
+        padding: 10px;
+        text-decoration: none;
+        color: rgb(0, 83, 0);
+      }
+      .navbar li a:hover {
+        opacity: 0.7;
+      }
+      .search {
+        float: right;
+        padding-right: 25px;
+      }
+      .search button {
+        border: none;
+        padding: 7px 15px;
+        background-color: rgb(105, 224, 185);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">About Us</a></li>
+          <div class="search">
+            <input type="text" placeholder="Search"/>
+            <button> <i class="fa fa-search"></i> </button>
+          </div>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
