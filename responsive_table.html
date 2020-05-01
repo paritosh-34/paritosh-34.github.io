@@ -14,7 +14,7 @@
       .row {
         height: 100vh;
         width: 100%;
-        background-color: rgb(35, 6, 139);
+        background-color: rgba(230, 230, 230, 0.24);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -22,12 +22,14 @@
       .container {
         font-size: 2rem;
         height: 90%;
-        width: 80%;
+        width: 40%;
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: white;
-        border-radius: 10%;
+        /* border-radius: 10%; */
+        box-shadow: 5px 6px 12px rgba(128, 128, 128, 0.438);
+        overflow: auto;
       }
       .container h1 {
         font-style: italic;
@@ -54,12 +56,18 @@
 
       li:hover {
         opacity: 0.6;
-        font-style: italic;
+        /* font-style: italic; */
         cursor: pointer;
       }
 
       li {
         padding: 10px;
+      }
+
+      @media only screen and (max-width: 786px) {
+        .container {
+          width: 100%;
+        }
       }
     </style>
   </head>
