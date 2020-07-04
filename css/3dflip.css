@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+}
+
+.card {
+  width: 400px;
+}
+
+.card__content {
+  position: relative;
+  text-align: center;
+  padding: 15em 3em;
+  -webkit-transition: -webkit-transform 1.5s ease;
+  transition: -webkit-transform 1.5s ease;
+  transition: transform 1.5s ease;
+  transition: transform 1.5s ease, -webkit-transform 1.5s ease;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.card:hover .card__content {
+  -webkit-transform: rotateY(0.5turn);
+          transform: rotateY(0.5turn);
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  padding: 5em 3em;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.card__front {
+  background-color: #f9f3e9db;
+  background-image: url("/img/eric-tompkins-B22JxzOkjYs-unsplash.jpg");
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #1f1f1f;
+}
+
+.card__back {
+  background-color: lightblue;
+  -webkit-transform: rotateY(0.5turn);
+          transform: rotateY(0.5turn);
+  color: #f9f3e9db;
+  background-color: #291a00;
+}
+
+.card__front::before {
+  content: "";
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  right: 1em;
+  bottom: 1em;
+  border: 3px solid currentColor;
+  -webkit-transform: translateZ(3rem);
+          transform: translateZ(3rem);
+}
+
+.card__title {
+  -webkit-transform: translateZ(9rem);
+          transform: translateZ(9rem);
+  font-size: 3.5rem;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  text-transform: uppercase;
+}
+
+.card__subtitle {
+  -webkit-transform: translateZ(6rem);
+          transform: translateZ(6rem);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.8em;
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+.card__body {
+  -webkit-transform: translateZ(3rem);
+          transform: translateZ(3rem);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+/*# sourceMappingURL=3dflip.css.map */
