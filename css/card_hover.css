@@ -39,8 +39,8 @@ body {
   margin: 2rem;
   font-size: 4rem;
   cursor: pointer;
-  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
   -webkit-transition: -webkit-transform 250ms ease, -webkit-box-shadow 250ms ease;
   transition: -webkit-transform 250ms ease, -webkit-box-shadow 250ms ease;
   transition: transform 250ms ease, box-shadow 250ms ease;
@@ -48,8 +48,8 @@ body {
 }
 
 .card:hover {
-  -webkit-box-shadow: 0px 15px 70px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 15px 70px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
